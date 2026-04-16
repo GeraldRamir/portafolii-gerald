@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
@@ -111,9 +111,7 @@
 
           <div class="col-md-6">
             <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
-              <i class="icon bi bi-"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 50 50">
-                <path d="M 27.5 5 C 24.08 5 21.269531 7.64 21.019531 11 L 24 11 C 26.76 11 29 13.24 29 16 L 29 17.820312 C 31.87 17.150312 34 14.57 34 11.5 C 34 7.91 31.09 5 27.5 5 z M 42.5 9 A 4.5 4.5 0 0 0 42.5 18 A 4.5 4.5 0 0 0 42.5 9 z M 6 13 C 4.346 13 3 14.346 3 16 L 3 34 C 3 35.654 4.346 37 6 37 L 24 37 C 25.654 37 27 35.654 27 34 L 27 16 C 27 14.346 25.654 13 24 13 L 6 13 z M 10 19 L 20 19 L 20 21 L 16 21 L 16 31 L 14 31 L 14 21 L 10 21 L 10 19 z M 29 21 L 29 34 C 29 36.76 26.76 39 24 39 L 18.199219 39 C 18.599219 40.96 19.569688 42.710313 20.929688 44.070312 C 22.739688 45.880312 25.24 47 28 47 C 33.52 47 38 42.52 38 37 L 38 21 L 29 21 z M 40 21 L 40 37 C 40 37.82 39.919531 38.620625 39.769531 39.390625 C 40.599531 39.780625 41.52 40 42.5 40 C 46.09 40 49 37.09 49 33.5 L 49 21 L 40 21 z"></path>
-                </svg></i>
+              <i class="icon bi bi-microsoft-teams flex-shrink-0" aria-hidden="true"></i>
               
               <div>
                 <h3>Microsoft Teams</h3>
@@ -161,35 +159,32 @@
 
         </div>
 
-        <!-- <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="600">
+        <form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="600" novalidate>
           <div class="row gy-4">
-
             <div class="col-md-6">
-              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+              <label for="name" class="visually-hidden">Nombre</label>
+              <input type="text" name="name" id="name" class="form-control" placeholder="Tu nombre" required autocomplete="name">
             </div>
-
-            <div class="col-md-6 ">
-              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+            <div class="col-md-6">
+              <label for="email" class="visually-hidden">Correo</label>
+              <input type="email" class="form-control" name="email" id="email" placeholder="Tu correo electrónico" required autocomplete="email">
             </div>
-
             <div class="col-md-12">
-              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+              <label for="subject" class="visually-hidden">Asunto</label>
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
             </div>
-
             <div class="col-md-12">
-              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+              <label for="message" class="visually-hidden">Mensaje</label>
+              <textarea class="form-control" name="message" id="message" rows="6" placeholder="Escribe tu mensaje…" required></textarea>
             </div>
-
             <div class="col-md-12 text-center">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-
-              <button type="submit">Send Message</button>
+              <div class="loading">Enviando…</div>
+              <div class="error-message" role="alert"></div>
+              <div class="sent-message">Tu mensaje se envió correctamente. Te responderé pronto.</div>
+              <button type="submit">Enviar mensaje</button>
             </div>
-
           </div>
-        </form>End Contact Form -->
+        </form>
 
       </div>
 
@@ -199,22 +194,19 @@
 
   <footer id="footer" class="footer dark-background">
     <div class="container">
-      <h3 class="sitename">Personal</h3>
+      <h3 class="sitename">Portafolio</h3>
+      <p class="footer-tagline">Gerald Luciano · Desarrollo y diseño web</p>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-github"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-     
+        <a href="mailto:lucianoramirezgerald@gmail.com" aria-label="Correo"><i class="bi bi-envelope"></i></a>
+        <a href="https://github.com/GeraldRamir?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/gerald-luciano-ramirez-7a59282b3/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
       </div>
-      <div class="container">
+      <div class="footer-bottom">
         <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Personal</strong> <span>All Rights Reserved</span>
+          © 2026 <strong class="px-1 sitename">Gerald Luciano</strong>. Todos los derechos reservados.
         </div>
         <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          Plantilla <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
       </div>
     </div>
@@ -228,7 +220,7 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -240,7 +232,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="./assets/js/Correos.js"></script>
+  <script src="assets/js/Correos.js"></script>
 
 </body>
 
